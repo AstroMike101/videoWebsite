@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section class="all">
+    <section class="all ">
         <header>
-            <h2 class = 'logo'>Logo</h2>
-            <div class="onSwitch active"></div>
+            <h2 class = 'logo'>Michael's Music Library</h2>
+            <div class="onSwitch"></div>
         </header>
        
         <video muted loop autoplay src="assets/music.mp4" class ='mainVideo'></video>
@@ -21,8 +21,8 @@
             <h2>Explore</h2>
             <h3>New Music</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic maxime nihil cupiditate ex laboriosam placeat tempore dolorum incidunt earum repudiandae!</p>
-        </div>
-
+            <a href="#">Explore</a>
+           
     </section>
 
     <div class="menu">
@@ -34,6 +34,16 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
-    
+    <script>
+        const menuToggle = document.querySelector('.onSwitch');
+      const all = document.querySelector('.all');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        all.classList.toggle('active');
+      })
+
+
+    </script>
 </body>
 </html>

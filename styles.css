@@ -21,8 +21,12 @@
     min-height: 100vh;
     padding: 100px;
     z-index: 2;
+    transition: 0.5s;
     
+}
 
+.all.active { 
+    right: 300px;
 }
 
 .all header {
@@ -39,6 +43,8 @@
 }
 
 .logo {
+    position:relative;
+    left: 4em;
     cursor:pointer;
     text-transform: uppercase;
 
@@ -100,6 +106,7 @@
     font-weight: 800;
     line-height: 1em;
     text-transform: uppercase;
+    transition: 0.5s;
 
 }
 
@@ -108,15 +115,77 @@
     font-weight: 700;
     line-height: 1em;
     text-transform: uppercase;
+    transition: 0.5s;
     
 }
 .text p { 
     font-size: 1.1em;
     margin: 20px 0;
     max-width: 700px;
+    transition: 0.5s;
+}
+.text a { 
+    display: inline-block;
+    font-size: 1em;
+    background: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
 }
 
 
-.menu { 
-    
+.menu
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul {
+    position:relative;
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color:black;
+}
+
+.menu ul li a:hover{
+    text-decoration: none;
+    font-size: 24px;
+    color:grey;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 798px)
+{
+  .all,
+  .all header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
 }
