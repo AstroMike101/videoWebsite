@@ -7,16 +7,15 @@
     <title>Listen more</title>
     <link rel="stylesheet" href="styles.css">
     
+    
 </head>
 
   </audio>
 <body>
-    
     <section class="all ">
         <header>
-            
             <h2 class = 'logo'>Michael's Music Library</h2>
-            <audio  class= 'yes' autoplay src="assets/song.mp3"></audio>
+            
             <div class="onSwitch"></div>
         </header>
        
@@ -24,6 +23,8 @@
         
         <div class="overlay"></div>
         <div class="text">
+            <audio controls class= 'mySong' src='assets/song.mp3'></audio>
+
             <h2>Explore</h2>
             
             <h3>New Music</h3>
@@ -42,6 +43,8 @@
         </ul>
       </div>
     <script>
+
+
         const menuToggle = document.querySelector('.onSwitch');
       const all = document.querySelector('.all');
 
